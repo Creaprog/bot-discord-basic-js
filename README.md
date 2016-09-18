@@ -16,24 +16,29 @@ A list of other Discord API libraries can be found [here](https://discordapp.com
 
 #Exemple of message
 
-`bot.on("message", msg => {
+```js
+bot.on("message", msg => {
 
       // Command /help
      if (msg.content.startsWith(prefix + "help")) {
-      msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands  \n    ```");
+      msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");
       console.log("Command executed: /help")
     }
-});`
+});```
 
 #Login With Token
 
-`//Login with TOKEN for Bot
-bot.login(" YOUR TOKEN HERE "); // Find your token > https://discordapp.com/developers/applications/me`
+```js
+//Login with TOKEN for Bot
+bot.login(" YOUR TOKEN HERE "); // Find your token > https://discordapp.com/developers/applications/me
+```
 
 # Set a prefix for all commands
 
-`// Set the prefix
-let prefix = "/ ";`
+```js
+// Set the prefix
+let prefix = "/ ";
+```
 
 #Links
 
