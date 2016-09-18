@@ -24,7 +24,8 @@ bot.on("message", msg => {
       msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");
       console.log("Command executed: /help")
     }
-});```
+});
+```
 
 #Login With Token
 
