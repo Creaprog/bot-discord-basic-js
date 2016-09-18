@@ -44,3 +44,7 @@ let prefix = "/ ";
 #Links
 
 [NPM](http://npmjs.com/package/discord.js)
+
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/gluten-free.svg)](http://forthebadge.com)
