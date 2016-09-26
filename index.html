@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bot Discord Basic work with Discord.js by thomasbnt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Bot Discord Basic work with Discord.js</h1>
+      <h2 class="project-tagline">Work with discord.js</h2>
+      <a href="https://github.com/thomasbnt/bot-discord-basic-js" class="btn">View on GitHub</a>
+      <a href="https://github.com/thomasbnt/bot-discord-basic-js/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/thomasbnt/bot-discord-basic-js/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="bot-discord-basic-js" class="anchor" href="#bot-discord-basic-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bot-discord-basic-js</h1>
+
+<p>Basic Bot Discord with discord.js</p>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>Requires node 0.12+</p>
+
+<p><code>npm install --save discord.js</code></p>
+
+<p>If you don't need voice support:</p>
+
+<p><code>npm install --save --no-optional discord.js</code></p>
+
+<p>A list of other Discord API libraries can be found <a href="https://discordapp.com/developers/docs/reference">here</a></p>
+
+<h1>
+<a id="exemple-of-message" class="anchor" href="#exemple-of-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exemple of message</h1>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">bot</span>.<span class="pl-en">on</span>(<span class="pl-s"><span class="pl-pds">"</span>message<span class="pl-pds">"</span></span>, <span class="pl-smi">msg</span> <span class="pl-k">=&gt;</span> {
+
+      <span class="pl-c">// Command /help</span>
+     <span class="pl-k">if</span> (<span class="pl-smi">msg</span>.<span class="pl-c1">content</span>.<span class="pl-en">startsWith</span>(prefix <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>help<span class="pl-pds">"</span></span>)) {
+      <span class="pl-smi">msg</span>.<span class="pl-smi">channel</span>.<span class="pl-en">sendMessage</span>(<span class="pl-s"><span class="pl-pds">"</span>```List of commands : <span class="pl-cce">\n\n</span> /version  | Version  <span class="pl-cce">\n</span> /help | All Commands```<span class="pl-pds">"</span></span>);
+      <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Command executed: /help<span class="pl-pds">"</span></span>)
+    }
+});</pre></div>
+
+<h1>
+<a id="login-with-token" class="anchor" href="#login-with-token" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Login With Token</h1>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//Login with TOKEN for Bot</span>
+<span class="pl-smi">bot</span>.<span class="pl-en">login</span>(<span class="pl-s"><span class="pl-pds">"</span> YOUR TOKEN HERE <span class="pl-pds">"</span></span>); <span class="pl-c">// Find your token &gt; https://discordapp.com/developers/applications/me</span></pre></div>
+
+<h1>
+<a id="set-a-prefix-for-all-commands" class="anchor" href="#set-a-prefix-for-all-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set a prefix for all commands</h1>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Set the prefix</span>
+<span class="pl-k">let</span> prefix <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>/ <span class="pl-pds">"</span></span>;</pre></div>
+
+<h1>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Links</h1>
+
+<p><a href="http://npmjs.com/package/discord.js">NPM</a></p>
+
+<p><a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/built-with-love.svg" alt="forthebadge"></a>
+<a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/uses-js.svg" alt="forthebadge"></a>
+<a href="http://forthebadge.com"><img src="http://forthebadge.com/images/badges/gluten-free.svg" alt="forthebadge"></a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/thomasbnt/bot-discord-basic-js">Bot Discord Basic work with Discord.js</a> is maintained by <a href="https://github.com/thomasbnt">thomasbnt</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
