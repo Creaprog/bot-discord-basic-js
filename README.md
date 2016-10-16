@@ -3,18 +3,17 @@
 Basic Bot Discord with discord.js
 
 
-## How to set-up
-1. Download node.js from http://nodejs.org
 
-2. Make a bot here https://discordapp.com/developers/applications/me 
+## Installation
+**First of all** - Make a discord Bot
+ * Go to https://discordapp.com/developers/docs/intro
+ * MyApplications > login > New Application.
+ * Complete the form. Once that's done, click "Create Application".
+ * Click "Create a Bot User", and then click "Yes, do it!"
+ * Now add your bot to your Discord Server. Remeber to Replace "[Place your bot's Client ID]" with your bot's client ID
+ `https://discordapp.com/oauth2/authorize?client_id=[Place your bot's Client ID]&scope=bot&permissions=0`
 
-After this, you should have a token
-
-3. Make the bot join your place with this URL: 
-https://discordapp.com/oauth2/authorize?&client_id=CLIENT_ID&scope=bot
-(Please replace the CLIENT_ID with your bot client ID )
-
-4. Now you have your bot inside, have fun
+ Now you have your bot inside, have fun
 
 
 Requires node 0.12+
