@@ -74,7 +74,9 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="https://github.com/thomasbnt/bot-discord-basic-js"><img src="./assets/img/github.png" alt="See on GitHub" width="30px" height="30px"></img></a>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/thomasbnt/bot-discord-basic-js"><img src="./assets/img/github.png" alt="See on GitHub" width="30px" height="30px"></img></a>
+            <a href="https://discord.gg/HKRHHfw"><img class="" src="https://discordapp.com/api/guilds/231739407713959946/embed.png?style=banner2"></img></a>
+
           </nav>
         </div>
       </header>
@@ -98,8 +100,9 @@
                 <li> Cliquez sur <b>"Créer un utilisateur Bot"</b>, puis cliquez sur <b>"Oui, faites-le!"</b></li>
                 <li> Maintenant, ajoutez votre bot à votre Serveur Discord. <b>Rappel :</b> Remplacer "[ID_Bot]" avec votre bot client ID.  </li>
                 <code class="code">https://discordapp.com/oauth2/authorize?client_id=[ID_Bot]&scope=bot&permissions=0</code><br><br>
+
                 <p> Pour les permissions , je vous conseille d'aller sur <a href="https://discordapi.com/permissions.html"> Permissions Calculator</a>.</br>
-                Maintenant que vôtre Bot est créer et qui à rejoint vôtre serveur, suivez le prossessus pour le développer et l'exécuter.</p>
+                Maintenant que vôtre Bot est créer et qui à rejoint vôtre serveur,</br> suivez le prossessus pour le développer et l'exécuter.</p>
               </ul>
             <h3><i class="material-icons">file_download</i> Installation</h3>
           </p>Requiert : node 0.12+</p>
@@ -110,7 +113,7 @@
             <code class="code">
               bot.on("message", msg => {</br>
 
-                    // Command /help </br>
+                  </br>
                    if (msg.content.startsWith(prefix + "help")) {</br>
                     msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");</br>
                     console.log("Command executed: /help")</br>
@@ -121,8 +124,8 @@
             <code class="code">
             //Login with TOKEN for Bot</br>
             bot.login(" <i>VOTRE TOKEN ICI</i> "); </code></br>
-            <p>Votre token est écrit ici > https://discordapp.com/developers/applications/me</p></br>
-
+            <p>Votre token est écrit ici > <a href="https://discordapp.com/developers/applications/me">https://discordapp.com/developers/applications/me</a></p></br>
+            <img src="./assets/img/app-bot-user.png" alt="" /></br>
             <h6>Définir un préfixe pour toutes les commandes</h6>
             <code class="code">
               // Set the prefix</br>
@@ -136,11 +139,10 @@
 
 
             <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell  mdl-cell mdl-cell--4-col">
-              <a href="https://discord.gg/HKRHHfw"><img class="" src="https://discordapp.com/api/guilds/231739407713959946/embed.png?style=banner4"></img></a></br>
+              </br>
               <h5><i class="material-icons">link</i> Liens importants</h5>
-              <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"href="https://nodejs.org">NPM</a> 
-              <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"href="https://hydrabolt.github.io/discord.js">discord.js</a>
-
+              <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://nodejs.org">NPM</a>
+              <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://hydrabolt.github.io/discord.js">discord.js</a></br>
 
             <!-- Pub
             <ins class="adsbygoogle"
