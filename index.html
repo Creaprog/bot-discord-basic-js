@@ -194,8 +194,8 @@
                         <li> Cliquez sur <b>"Créer un utilisateur Bot"</b>, puis cliquez sur <b>"Oui, faites-le!"</b></li>
                         <li> Maintenant, ajoutez votre bot à votre Serveur Discord. <b>Rappel :</b> Remplacer "[ID_Bot]" avec votre bot client ID.  </li>
                       </ul>
-                        <code class="code">https://discordapp.com/oauth2/authorize?client_id=[ID_Bot]&scope=bot&permissions=0</code><br><br>
 
+                        <script src="https://gist.github.com/thomasbnt/e1eedca4fd943fca815ae4ad3ec1b7e8.js"></script>
                         <p> Pour les permissions , je vous conseille d'aller sur <a href="https://discordapi.com/permissions.html"> Permissions Calculator</a>.</br>
                         Maintenant que vôtre Bot est créer et qui à rejoint vôtre serveur,</br> suivez le prossessus pour le développer et l'exécuter.</p>
 
@@ -205,33 +205,15 @@
                     <p>Une liste d'autres bibliothèques d'API Discord peut être trouvée <a href="https://discordapp.com/developers/docs/reference">ici</a>.</p>
                     <h3><i class="material-icons">short_text</i> Exemples </h3>
                     <H6> Exemple de message</h6>
-                    <code class="code">
-                      bot.on("message", msg => {</br>
-
-                          </br>
-                           if (msg.content.startsWith(prefix + "help")) {</br>
-                            msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");</br>
-                            console.log("Command executed: /help")</br>
-                          }</br>
-                      });
-                    </code>
+                    <script src="https://gist.github.com/thomasbnt/e5bda6a6291d1c6904d2847b7329bcd6.js"></script>
                     <h6>Connexion avec Token</h6>
-                    <code class="code">
-                    //Login with TOKEN for Bot</br>
-                    bot.login(" <i>VOTRE TOKEN ICI</i> "); </code></br>
+                    <script src="https://gist.github.com/thomasbnt/34b19030c9fef1b313dbdf6cacf8c999.js"></script>
                     <p>Votre token est écrit ici > <a href="https://discordapp.com/developers/applications/me">https://discordapp.com/developers/applications/me</a></p></br>
                     <h6>Définir un préfixe pour toutes les commandes</h6>
-                    <code class="code">
-                      // Set the prefix</br>
-                      let prefix = "/ ";
-                    </code></br>
-                    </br>
+                    <script src="https://gist.github.com/thomasbnt/2d17ee96a1abc39bb9be31eb9c3e422f.js"></script>
                     <h5><i class="material-icons">link</i> Liens importants</h5>
-
                         <div class="content mdl-cell mdl-cell--8-col">
                             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://nodejs.org">NPM</a>
-
-
                             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://hydrabolt.github.io/discord.js">discord.js</a></br>
                         </div>
 
