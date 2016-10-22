@@ -44,9 +44,15 @@
     }
     .content {
       padding: 20px;
-      padding-left: 30px;
+      padding-left: 20px;
       padding-right: 5px;
       padding-bottom:40px;
+    }
+    .content-2 {
+      padding: 20px;
+      padding-left: 20px;
+      padding-right: 5px;
+      padding-bottom:10px;
     }
     .code {
       background-color: #eceffa;
@@ -76,108 +82,192 @@
   <body>
 
     <!-- Header -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <img class="mdl-layout-icon" src="./assets/img/Discord-Logo.png"></img>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">Basic Bot Discord</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation. We hide it in small screens. -->
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://thomasbnt.github.io/bot-discord-basic-js/" data-text="Basic Bot Discord" data-via="Hyprimort" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <a class="mdl-button" href="https://github.com/thomasbnt/bot-discord-basic-js"><img src="./assets/img/github.png" alt="See on GitHub" width="30px" height="30px"></img></a>
-            <a href="https://discord.gg/HKRHHfw"><img class="" src="https://discordapp.com/api/guilds/231739407713959946/embed.png?style=banner2"></img></a>
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
 
-          </nav>
+        <div class="mdl-layout__drawer">
+
+          <div class="content-2 mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-card mdl-cell mdl-cell--12-col">
+
+
+              <!-- Square card -->
+              <style>
+              .card-square.mdl-card {
+                width: 220px;
+                height: 220px;
+              }
+              .card-square > .mdl-card__title {
+                color: #424242;
+                background:
+                  url('') bottom right 1% no-repeat #eceffa;
+
+              }
+              </style>
+
+
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">GitHub</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Suivez les dernières versions de ce Bot.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/thomasbnt/bot-discord-basic-js/">
+                  Voir le repository
+                </a>
+              </div>
+            </div>
+            <div class="content-2 mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Coding'Serv</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Un Serveur Discord 100% Français pour le développement & jeux.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://discord.gg/HKRHHfw">
+                  Rejoindre   
+
+                </a>
+              </div>
+
+            </div>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            <img src="http://forthebadge.com/images/badges/gluten-free.svg" alt="" />
+            <img src="http://forthebadge.com/images/badges/uses-js.svg" alt="" />
+            <img src="http://forthebadge.com/images/badges/built-with-love.svg" alt="" />
+
+
+
+
+
         </div>
-      </header>
-    <!-- End of Header -->
-
-    <!-- Main page -->
-      <main class="mdl-layout__content">
+        <main class="mdl-layout__content">
         <div class="page-content">
-          <div class="mdl-grid">
-            <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-card mdl-cell mdl-cell--12-col">
-                <h3> Description </h3>
-                <p>Basique Bot Discord en Javascript. Marche avec <a href="http://hydrabolt.github.io/discord.js">discord.js</a> ainsi que <a href="https://nodejs.org/en/">Node</a>.</br>
-                Un simple Bot Discord utilisable pour commencer à développer le sien.
-              </p>
-              <h3><i class="material-icons">settings</i> Création et ajout du Bot Discord</h3>
-              <p><b> Tout d'abord</b> , créer un nouveau Bot Discord sur Discordapp :<br>
-                <ul>
-                  <li> Aller sur la page : <a href="https://discordapp.com/developers/docs/intro">https://discordapp.com/developers/docs/intro</a></li>
-                  <li> Puis <b>MyApplications</b> > <b>New Application</b>.</li>
-                  <li> Complétez le formulaire. Une fois fait, cliquez sur <b>"Créer Application"</b>.</li>
-                  <li> Cliquez sur <b>"Créer un utilisateur Bot"</b>, puis cliquez sur <b>"Oui, faites-le!"</b></li>
-                  <li> Maintenant, ajoutez votre bot à votre Serveur Discord. <b>Rappel :</b> Remplacer "[ID_Bot]" avec votre bot client ID.  </li>
-                </ul>
-                  <code class="code">https://discordapp.com/oauth2/authorize?client_id=[ID_Bot]&scope=bot&permissions=0</code><br><br>
+          <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+              <!--<img class="mdl-layout-icon" src="./assets/img/Discord-Logo.png"></img>-->
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Basic Bot Discord</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
 
-                  <p> Pour les permissions , je vous conseille d'aller sur <a href="https://discordapi.com/permissions.html"> Permissions Calculator</a>.</br>
-                  Maintenant que vôtre Bot est créer et qui à rejoint vôtre serveur,</br> suivez le prossessus pour le développer et l'exécuter.</p>
 
-              <h3><i class="material-icons">file_download</i> Installation</h3>
-            </p>Requiert : node 0.12+</p>
-              <code class="code">npm install --save discord.js</code></br>
-              <p>Une liste d'autres bibliothèques d'API Discord peut être trouvée <a href="https://discordapp.com/developers/docs/reference">ici</a>.</p>
-              <h3><i class="material-icons">short_text</i> Exemples </h3>
-              <H6> Exemple de message</h6>
-              <code class="code">
-                bot.on("message", msg => {</br>
+                  <a href="https://discord.gg/HKRHHfw"><img class="" src="https://discordapp.com/api/guilds/231739407713959946/embed.png?style=banner2"></img></a>
 
+                </nav>
+                            <!-- Left aligned menu below button
+                  <button id="demo-menu-lower-right"
+                          class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                  </button>-->
+
+                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                      for="demo-menu-lower-right">
+                      <span>Partager</span>
+                    <li class="mdl-menu__item">  <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://thomasbnt.github.io/bot-discord-basic-js/" data-text="Basic Bot Discord" data-via="Hyprimort" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+                  </ul>
+
+              </div>
+            </header>
+          <!-- End of Header -->
+
+          <!-- Main page -->
+            <main class="mdl-layout__content">
+              <div class="page-content">
+                <div class="mdl-grid">
+                  <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-card mdl-cell mdl-cell--12-col">
+                    <h3> Description </h3>
+                      <p>Basique Bot Discord en Javascript. Marche avec <a href="http://hydrabolt.github.io/discord.js">discord.js</a> ainsi que <a href="https://nodejs.org/en/">Node</a>.</br>
+                      Un simple Bot Discord utilisable pour commencer à développer le sien.
+                    </p>
+                    <h3><i class="material-icons">settings</i> Création et ajout du Bot Discord</h3>
+                    <p><b> Tout d'abord</b> , créer un nouveau Bot Discord sur Discordapp :<br>
+                      <ul>
+                        <li> Aller sur la page : <a href="https://discordapp.com/developers/docs/intro">https://discordapp.com/developers/docs/intro</a></li>
+                        <li> Puis <b>MyApplications</b> > <b>New Application</b>.</li>
+                        <li> Complétez le formulaire. Une fois fait, cliquez sur <b>"Créer Application"</b>.</li>
+                        <li> Cliquez sur <b>"Créer un utilisateur Bot"</b>, puis cliquez sur <b>"Oui, faites-le!"</b></li>
+                        <li> Maintenant, ajoutez votre bot à votre Serveur Discord. <b>Rappel :</b> Remplacer "[ID_Bot]" avec votre bot client ID.  </li>
+                      </ul>
+                        <code class="code">https://discordapp.com/oauth2/authorize?client_id=[ID_Bot]&scope=bot&permissions=0</code><br><br>
+
+                        <p> Pour les permissions , je vous conseille d'aller sur <a href="https://discordapi.com/permissions.html"> Permissions Calculator</a>.</br>
+                        Maintenant que vôtre Bot est créer et qui à rejoint vôtre serveur,</br> suivez le prossessus pour le développer et l'exécuter.</p>
+
+                    <h3><i class="material-icons">file_download</i> Installation</h3>
+                  </p>Requiert : node 0.12+</p>
+                    <code class="code">npm install --save discord.js</code></br>
+                    <p>Une liste d'autres bibliothèques d'API Discord peut être trouvée <a href="https://discordapp.com/developers/docs/reference">ici</a>.</p>
+                    <h3><i class="material-icons">short_text</i> Exemples </h3>
+                    <H6> Exemple de message</h6>
+                    <code class="code">
+                      bot.on("message", msg => {</br>
+
+                          </br>
+                           if (msg.content.startsWith(prefix + "help")) {</br>
+                            msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");</br>
+                            console.log("Command executed: /help")</br>
+                          }</br>
+                      });
+                    </code>
+                    <h6>Connexion avec Token</h6>
+                    <code class="code">
+                    //Login with TOKEN for Bot</br>
+                    bot.login(" <i>VOTRE TOKEN ICI</i> "); </code></br>
+                    <p>Votre token est écrit ici > <a href="https://discordapp.com/developers/applications/me">https://discordapp.com/developers/applications/me</a></p></br>
+                    <h6>Définir un préfixe pour toutes les commandes</h6>
+                    <code class="code">
+                      // Set the prefix</br>
+                      let prefix = "/ ";
+                    </code></br>
                     </br>
-                     if (msg.content.startsWith(prefix + "help")) {</br>
-                      msg.channel.sendMessage("```List of commands : \n\n /version  | Version  \n /help | All Commands```");</br>
-                      console.log("Command executed: /help")</br>
-                    }</br>
-                });
-              </code>
-              <h6>Connexion avec Token</h6>
-              <code class="code">
-              //Login with TOKEN for Bot</br>
-              bot.login(" <i>VOTRE TOKEN ICI</i> "); </code></br>
-              <p>Votre token est écrit ici > <a href="https://discordapp.com/developers/applications/me">https://discordapp.com/developers/applications/me</a></p></br>
-              <h6>Définir un préfixe pour toutes les commandes</h6>
-              <code class="code">
-                // Set the prefix</br>
-                let prefix = "/ ";
-              </code></br>
-              </br>
-              <h5><i class="material-icons">link</i> Liens importants</h5>
-                <div class="content mdl-cell mdl-cell--8-col">
-                  <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://nodejs.org">NPM</a>
-                  <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://hydrabolt.github.io/discord.js">discord.js</a></br>
-                </div>
-              <!--<img src="http://forthebadge.com/images/badges/gluten-free.svg" alt="" />
-              <img src="http://forthebadge.com/images/badges/uses-js.svg" alt="" />
-              <img src="http://forthebadge.com/images/badges/built-with-love.svg" alt="" />-->
+                    <h5><i class="material-icons">link</i> Liens importants</h5>
 
+                        <div class="content mdl-cell mdl-cell--8-col">
+                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://nodejs.org">NPM</a>
+
+
+                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://hydrabolt.github.io/discord.js">discord.js</a></br>
+                        </div>
+
+
+
+                </div></br>
+                <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-card mdl-cell mdl-cell--12-col">
+                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+                  <!-- Adsense Footer Basic Bot Discord GitHub Pgaes -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-8814363359807315"
+                     data-ad-slot="7096517981"
+                     data-ad-format="link"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </main>
           </div>
-          <div>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-            <!-- Adsense Footer Basic Bot Discord GitHub Pgaes -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-8814363359807315"
-               data-ad-slot="7096517981"
-               data-ad-format="link"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </main>
     </div>
