@@ -4,7 +4,7 @@
   "description": "Simple and basic Bot Discord worked with discord.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomasbnt/SoundCloud-Bot-Discord.git"
+    "url": "git+https://github.com/thomasbnt/bot-discord-basic-js.git"
   },
   "main": "bot.js",
   "scripts": {
